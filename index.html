@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the Chrome extension YT Easy Translate.">
+  <meta name="referrer" content="no-referrer">
+  <title>Privacy Policy — YT Easy Translate</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --border: #d1d9e0;
+      --surface: #f6f8fa;
+      --link: #0969da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --text: #e6edf3;
+        --muted: #9198a1;
+        --border: #3d444d;
+        --surface: #151b23;
+        --link: #4493f8;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Thai", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+
+    .product {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .meta {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+
+    h2 {
+      margin: 2rem 0 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.35;
+    }
+
+    p,
+    ul {
+      margin: 0 0 1rem;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    li + li {
+      margin-top: 0.35rem;
+    }
+
+    .summary {
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .summary h2 {
+      margin-top: 0;
+    }
+
+    .summary p:last-child,
+    .summary ul:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      background: var(--surface);
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: 0.9em;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--link);
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9375rem;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding-top: 1.75rem;
+      }
+
+      h1 {
+        font-size: 1.625rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="product">YT Easy Translate</p>
+      <p class="meta">Effective date and last updated: <time datetime="2026-10-02">October 2, 2026</time></p>
+    </header>
+
+    <section class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <ul>
+        <li>The extension stores only your settings (on/off, caption language, caption appearance, whether the TH/EN button is shown), using Chrome's storage.</li>
+        <li>It reads the caption information that the YouTube player already has for the video you are watching, only to switch on YouTube's own caption translation, inside your browser.</li>
+        <li>The extension itself makes no network requests. Nothing is sent to the developer, and nothing is sold or shared.</li>
+      </ul>
+    </section>
+
+    <h2>What the extension does</h2>
+    <p>YT Easy Translate is a Chrome extension that turns on YouTube's built-in caption auto-translate, so captions appear in your language. It runs only on <code>https://www.youtube.com/</code>.</p>
+
+    <h2>Information the extension accesses</h2>
+    <p>On www.youtube.com video pages, the extension reads the following information that the YouTube player already holds in your browser:</p>
+    <ul>
+      <li><strong>The video's caption tracks</strong>: which caption languages the video has, and which audio language is its default.</li>
+      <li><strong>The player's current caption state</strong>: whether captions are on, which track is shown, and whether an advertisement is playing.</li>
+      <li><strong>Addresses of the caption requests the YouTube player makes</strong> and whether YouTube answered them, read from the browser's performance timing information. This is used only to notice when YouTube refuses a translated caption request ("too many requests") so the extension can ask the player to try again a little later.</li>
+      <li><strong>Your browser's language</strong>, when the caption language is set to follow Chrome.</li>
+    </ul>
+    <p>This information is processed only inside your browser. It is not stored and is not sent anywhere. The extension does not read caption text.</p>
+
+    <h2>What the extension changes on YouTube</h2>
+    <ul>
+      <li>It asks the YouTube player to show captions translated into your chosen language, or to show a caption track already in that language.</li>
+      <li>It may click the player's captions (CC) button to turn captions on, or off for a video already spoken in your language.</li>
+      <li>If you choose caption size, colours or background transparency in the popup, it applies them through the player's own caption settings, which YouTube keeps in your browser.</li>
+      <li>It adds a small TH/EN button to the player, which you can hide in the popup.</li>
+    </ul>
+
+    <h2>Information the extension stores</h2>
+    <p>The extension uses the Chrome storage API (<code>chrome.storage.sync</code>) to store these settings:</p>
+    <ul>
+      <li><strong>enabled</strong>: whether the extension is on.</li>
+      <li><strong>language</strong>: the caption language, or "same as Chrome".</li>
+      <li><strong>showButton</strong>: whether the TH/EN button is shown in the player.</li>
+      <li><strong>fontSize, color, background, backgroundOpacity</strong>: your caption appearance choices.</li>
+      <li><strong>styleResetAt</strong>: the time you last pressed Reset, used to tell open YouTube tabs to reset the caption appearance.</li>
+    </ul>
+    <p>If Chrome sync is turned on in your browser, Chrome may sync these settings between your own devices. The developer cannot access them. Chrome removes them when you uninstall the extension.</p>
+
+    <h2>Information transmitted outside your browser</h2>
+    <p>The extension makes no network requests and contains no code that sends data to the developer or to any other party. When it switches on translation, the YouTube player itself requests the translated captions from YouTube, in the same way as when you choose Auto-translate in YouTube's own menu. That request is handled by YouTube under YouTube's and Google's privacy policies.</p>
+
+    <h2>Personal information</h2>
+    <p>The extension does not collect personal information, account or login information, authentication data, browsing history, watch history, location, or usage statistics.</p>
+
+    <h2>Selling and sharing of data</h2>
+    <p>The extension does not sell, share, or transfer any data to third parties.</p>
+
+    <h2>Third-party services</h2>
+    <p>The extension does not use any third-party services, including analytics, telemetry, crash reporting, advertising, or tracking services. It does not load remote code; all of its code is included in the extension package.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>storage</strong>: to save your settings.</li>
+      <li><strong>activeTab</strong>: when you open the extension's popup, to check whether the YouTube tab you are viewing has loaded the extension, and to refresh that tab if you press the Refresh button.</li>
+      <li><strong>Access to <code>https://www.youtube.com/*</code></strong> (content scripts): to switch on caption translation on YouTube video pages. The extension does not run on any other website.</li>
+    </ul>
+
+    <h2>Changes to this Privacy Policy</h2>
+    <p>If the extension's data practices change, this page will be updated and the date at the top of this page will be revised.</p>
+
+    <h2>Contact</h2>
+    <p>QSS — <a href="mailto:tk7013@gmail.com">tk7013@gmail.com</a></p>
+
+    <footer>
+      <p>YT Easy Translate is an independent tool and is not affiliated with or endorsed by YouTube or Google.</p>
+    </footer>
+  </main>
+</body>
+</html>
